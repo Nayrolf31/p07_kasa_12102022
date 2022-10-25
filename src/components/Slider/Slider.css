@@ -1,0 +1,26 @@
+header {
+    background: rgb(214, 214, 214);
+    height: 400px;
+    max-width: 1100px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 1em;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.image-slider {
+    height: 60px;
+    width: auto;
+    object-fit: cover;
+    margin: 10px;
+    cursor: pointer;
+    transform: scale(1);
+}
+.image-slider:hover {
+   transform: scale(1.10);
+}
+

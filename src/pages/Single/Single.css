@@ -1,0 +1,126 @@
+.container__single {
+    /* display: flex;
+    justify-content: center;
+    align-items: flex-start; */
+    margin: 0 140px;
+    width: auto;
+}
+
+.single__wrappe {
+    width: auto;
+}
+
+
+.single__content {
+    margin: 30px 1em;
+    min-height: 700px;
+}
+
+
+.single__content--header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    background: none;
+    height: auto;
+}
+
+.user {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    align-self: flex-end;
+}
+@media screen and (max-width:600px) {
+    .user {
+    width: 100%;
+}
+}
+ .user--name {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    color: #ff6060;
+   
+}
+
+.user--name h3{
+   margin-right: 15px;
+   font-weight: 200;
+   font-family: Montserrat;
+}
+
+.user img {
+    width: 80px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+
+.title h1 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    display: flex;
+    color: #ff6060;
+}
+
+
+.title address {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    display: flex;
+    margin: 1em 0;
+
+    color: #ff6060;
+}
+
+.tags {
+    display: flex;
+    padding: 0;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    list-style: none;
+    margin-top: 15px;
+    margin-bottom: 0;
+}
+
+.tag-item {
+    margin-right: 20px;
+    padding: 5px 30px;
+    border-radius: 20px;
+    background: #ff6060;
+    color: #FFF;
+    font-weight: 200;
+    font-family: Montserrat;
+}
+
+.content {
+    /* display: flex;
+    justify-content: space-between; */
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    flex-wrap: wrap;
+    margin: 10px 0;
+}
+
+.content .description {
+    font-family: Montserrat;
+    font-size: 18px;
+    color: #ff6060;
+    font-weight: 700;
+}
+
+@media screen and (max-width:600px) {
+    .content {
+        display: block;
+    }
+}
+

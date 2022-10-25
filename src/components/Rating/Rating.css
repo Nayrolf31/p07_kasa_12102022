@@ -1,0 +1,11 @@
+.reviews {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+}
+
+.reviews .icon-reviews {
+    font-size: 30px;
+    color:#ff6060;
+    margin-right: 10px;
+}
