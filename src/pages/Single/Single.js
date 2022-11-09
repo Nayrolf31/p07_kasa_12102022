@@ -20,13 +20,13 @@ const Single = ({ data }) => {
         title,
         location,
         description,
-        equipements,
+        equipments,
         host,
         rating,
         tags,
     } = dataID;
 
-    console.log(dataID)
+    console.log("holà", dataID.equipments)
 
     // const Logement = () => {
     //     const { logementId } = useParams()
@@ -44,7 +44,7 @@ const Single = ({ data }) => {
         },
         {
             title: 'Equipements',
-            desc: equipements,
+            desc: equipments,
         },
     ];
 
@@ -113,7 +113,7 @@ const Single = ({ data }) => {
                         {contentText.map((content, index) => {
                             return <Accordeon key={index} content={content} />
                         })}
-                            
+
                         {/* <div className="content">
                             <Accordeon title="description" content={host.description}/>
                         </div>
@@ -128,6 +128,7 @@ const Single = ({ data }) => {
                                 return <li key={index}>{item}</li>;
                             })}
                         </ul> */}
+                        
                     </div>
                     
 
