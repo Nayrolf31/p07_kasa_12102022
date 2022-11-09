@@ -2,8 +2,8 @@
     /* display: flex;
     justify-content: center;
     align-items: flex-start; */
-    margin: 0 140px;
-    width: auto;
+    margin: auto;
+    width: 90%;
 }
 
 .single__wrappe {
@@ -12,7 +12,9 @@
 
 
 .single__content {
-    margin: 30px 1em;
+    /* margin: 30px 15px; */
+    margin: auto;
+    width: 85%;
     min-height: 700px;
 }
 
@@ -32,6 +34,7 @@
     justify-content: flex-end;
     align-items: flex-end;
     align-self: flex-end;
+    width: 20%;
 }
 @media screen and (max-width:600px) {
     .user {
@@ -59,6 +62,9 @@
     border-radius: 50%;
 }
 
+.title {
+    width: 80%;
+}
 
 .title h1 {
     font-family: Montserrat;
@@ -106,6 +112,8 @@
     justify-content: space-between; */
     display: flex;
     justify-content: space-between;
+    /* width: 45%; */
+    width: 100%;
     align-items: start;
     flex-wrap: wrap;
     margin: 10px 0;

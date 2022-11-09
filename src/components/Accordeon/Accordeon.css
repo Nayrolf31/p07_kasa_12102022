@@ -1,11 +1,16 @@
+.width {
+    width: 48%;
+}
+
 .wrappe {
     height: 50px;
+    min-width: 80%;
     display: flex;
     justify-content: space-between;
     background: #ff6060;
     border-radius: 15px;
-    padding: 0 1em;
-    margin-top: 1em;
+    padding: 0 15px;
+    margin-top: 15px;
 }
 
 /* .wrapper_contain {
@@ -34,7 +39,7 @@
 
 .wrappe__text {
     list-style: none;
-    padding: 1em;
+    padding: 15px;
     background: #f7f7f7;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
@@ -51,7 +56,7 @@
     color: #ff6060;
 }
 
-.icon {
+.icons {
     color: #ffffff;
     font-size: 20px;
 }
@@ -60,7 +65,7 @@
  .wrappe_contain {
     display: flex;
     flex-direction: column;
-    width: 45%;
+    width: 48%;
     margin: 0;
     align-content: center;
  }

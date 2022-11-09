@@ -19,11 +19,23 @@
     padding-left: 25px;
 }
 @media screen and (max-width:390px) {
-    .main-nav .main-nav-img img {
-        width: 80px;
+
+    .main-nav {
+        padding: 0 20px;
     }
-    .main-nav .link {
-        font-size: 14px!important;
+
+    .links {
+        width: 50%;
+    }
+
+    .link{
+        width: 50%;
+        font-size: 13px!important;
+        white-space : nowrap;
+    }
+
+    .main-nav .main-nav-img img {
+        width: 120px;
     }
 }
 

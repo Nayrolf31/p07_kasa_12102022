@@ -16,9 +16,11 @@ const Accordeon = ({ content }) => {
                         onClick={() => setToggle(!toggle)}
                     >
                         {toggle ? (
-                            <FaChevronUp className="icon" />
+                            // <FaChevronUp className="icon" />
+                            <i class="fas fa-chevron-down icons"></i>
                         ) : (
-                            <FaChevronDown className="icon" />
+                            // <FaChevronDown className="icon" />
+                            <i class="fas fa-chevron-up icons"></i>
                         )}
                     </button>
                 </div>
@@ -29,6 +31,7 @@ const Accordeon = ({ content }) => {
                         <li key={id}>{content[index]}</li>
                     ))} */}
                     <li> {desc}</li>
+                    <li> {equipements} </li>
                    
                 </ul>
             ) : null}

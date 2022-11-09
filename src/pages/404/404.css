@@ -4,17 +4,18 @@
     min-height: 760px;
 }
 
-.bloc-404 .text-404 {
+.text-404 {
     font-family: Montserrat;
     font-style: normal;
     font-weight: bold;
     font-size: 200px;
     text-align: center;
-    line-height: 20px;
+    margin-top: 150px;
+    /* line-height: 20px; */
     color: #ff6060;
 }
 
-.bloc-404 .text {
+.text {
     font-family: Montserrat;
     font-style: normal;
     font-weight: 500;
@@ -23,7 +24,7 @@
     text-align: center;
 }
 
-.bloc-404 .back-home {
+.back-home {
     font-family: Montserrat;
     font-style: normal;
     font-weight: 500;

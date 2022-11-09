@@ -40,4 +40,7 @@
         margin: 0;
         padding: 0;
     }
+    .container{
+        margin-top: 0;
+    }
 }

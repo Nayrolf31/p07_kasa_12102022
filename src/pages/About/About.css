@@ -1,0 +1,26 @@
+.container__accordeon {
+    /* display: flex;
+    justify-content: center; */
+    width: 80%;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+.header {
+    margin: auto;
+    width: 85%;
+    max-width: 1230px;
+    border-radius: 20px;
+}
+
+.header img {
+    border-radius: 20px;
+}
+
+@media screen and (max-width:390px) {
+    .container__accordeon {
+        width: 85%;
+    }
+
+    
+}

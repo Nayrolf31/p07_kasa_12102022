@@ -1,6 +1,7 @@
 //import React, { useState, useEffect } from 'react';
 import Slider from '../../components/Slider/Slider';
 import Accordeon from '../../components/Accordeon/Accordeon';
+import Accordion from '../../components/AccordeonTest/AccordeonTest';
 import Rating from '../../components/Rating/Rating'
 //import DataDescription from '../../data.json';
 //import DataEquipements from '../../data.json';
@@ -25,6 +26,8 @@ const Single = ({ data }) => {
         tags,
     } = dataID;
 
+    console.log(dataID)
+
     // const Logement = () => {
     //     const { logementId } = useParams()
     //     let logement = {}
@@ -40,7 +43,7 @@ const Single = ({ data }) => {
             desc: description,
         },
         {
-            title: 'Equipement',
+            title: 'Equipements',
             desc: equipements,
         },
     ];
@@ -97,18 +100,27 @@ const Single = ({ data }) => {
                     </ul> */}
 
                     {/* ACCORDEON */}
-                    <div className="content">
-                        {contentText.map((description, equipements, index) => {
-                            return <Accordeon key={index} content={description} />
-                        })}
 
+                    <div className='content'>
+                        <div className='accordions'>
+                        <Accordion title="Description" content={description} />
+                        <Accordion title="Equipements" content="{equipements}" />
+                        </div>
+                    </div>
+
+                    {/* <div className="content"> */}
+                    <div>
+                        {contentText.map((content, index) => {
+                            return <Accordeon key={index} content={content} />
+                        })}
+                            
                         {/* <div className="content">
-                            <Accordeon title="description" content={description}/>
+                            <Accordeon title="description" content={host.description}/>
                         </div>
 
                         <div className="content">
-                            <Accordeon title="Equipements" content={single.equipements}/>
-                        </div>*/}
+                            <Accordeon title="Equipements" content={host.equipements}/>
+                        </div> */}
 
                         {/* <p className="description">{description}</p> */}
                         {/* <ul>
@@ -117,11 +129,10 @@ const Single = ({ data }) => {
                             })}
                         </ul> */}
                     </div>
+                    
 
-                        <div>
-                            accordéon
-                            accordéon
-                        </div>
+                   
+
 
                 </section>
             </div>
