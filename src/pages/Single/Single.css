@@ -141,6 +141,15 @@
         flex-direction: column;
         width: 100%;
     }
+
+    .title h1 {
+        font-size: 18px;
+    }
+
+    .title address {
+        font-size: 14px;
+    }
+
     .tags {
         display: flex;
         flex-direction: row;
@@ -150,10 +159,12 @@
         margin: 15px auto;
     }
     .tag-item {
-        border-radius: 10px;
-        width: 15%;
         display: flex;
         justify-content: center;
+        border-radius: 10px;
+        font-size: 10px;
+        white-space: nowrap;
+        width: 15%;
         margin-right: 10px;
     }
     .user {
@@ -165,7 +176,8 @@
         height: 50px;
     }
     .icon{
-        font-size: 20px;
+        font-size: 17px;
+        margin-bottom: 15px;
     }
 }
 
