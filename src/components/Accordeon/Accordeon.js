@@ -5,7 +5,9 @@ import './Accordeon.css';
 const Accordeon = ({ content }) => {
     const [toggle, setToggle] = useState(false);
     const { title, desc, equipments } = content;
-    console.log("ici", equipments)
+    console.log("ici", desc)
+    console.log("prout", content.desc)
+    console.log("POUET", content)
     return (
         <div className='wrappe_contain'>
             <div className="wrappe">
@@ -32,11 +34,12 @@ const Accordeon = ({ content }) => {
                         <li key={id}>{content[index]}</li>
                     ))} */}
                     <li> {desc}</li>
-                    {
-                        equipments.map((equipment, i) => (
+                    <li></li>
+                    {/* {
+                        dataID.equipments.map((equipment, i) => (
                             <li key={i}>{equipment}</li>
                         ))
-                    }
+                    } */}
 
                 </ul>
             ) : null}

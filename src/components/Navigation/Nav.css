@@ -1,15 +1,14 @@
-.container__nav {
+/* .container__nav {
     display: flex;
     justify-content: center;
 }
 
 .main-nav {
-    max-width: 1100px;
-    width: 100%;
-    min-height: 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 83%;
+    min-height: 80px;
     padding: 20px 50px;
 }
 
@@ -20,18 +19,36 @@
 }
 @media screen and (max-width:390px) {
 
+    #root {
+        margin: 0;
+    }
+    
+    .container__nav{
+        width: 93%;
+        margin: 0;
+    }
+
     .main-nav {
-        padding: 0 20px;
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+    }
+
+    .main-nav .links .link {
+        display: flex;
+        margin: 0!important;
+        padding: 0!important;
     }
 
     .links {
-        width: 50%;
+        width: 30%;
     }
 
     .link{
-        width: 50%;
+        width: 30%;
         font-size: 13px!important;
         white-space : nowrap;
+        text-transform: uppercase;
     }
 
     .main-nav .main-nav-img img {
@@ -59,4 +76,104 @@
     display: flex;
     color: #ff6060;
     padding-left: 40px;
+} */
+
+.container__nav .main-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 84%;
+    height: auto;
+    margin: 20px auto;
+
+}
+
+.main-nav-img {
+    width: 50%;
+    overflow: hidden;
+    height: 70px;
+}
+
+.main-nav-img img {
+    width: auto;
+    height: 70px;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row!important;
+    width: 20%;
+}
+
+.link {
+    display: flex;
+    justify-content: inherit;
+    text-decoration: none;
+    color: #ff6060;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+@media screen and (max-width:1440px) {
+
+    .links {
+        width: 25%;
+    }
+
+}
+
+@media screen and (max-width:1200px) {
+
+    .links {
+        width: 35%;
+    }
+
+}
+
+@media screen and (max-width:750px) {
+
+    .container__nav .main-nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 90%;
+        height: auto;
+        margin-right : auto;
+        margin-left: auto;
+        margin-top: 20px;
+        margin-bottom: 10px;
+
+    }
+
+    .main-nav-img {
+        width: 50%;
+        overflow: hidden;
+        height: 40px;
+    }
+
+    .main-nav-img img {
+        width: auto;
+        height: 40px;
+    }
+
+    .links {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row !important;
+        width: 45%;
+    }
+
+    .link {
+        display: flex;
+        justify-content: inherit;
+        text-decoration: none;
+        color: #ff6060;
+        text-transform: uppercase;
+        font-size: 12px;
+        font-weight: 500;
+    }
 }

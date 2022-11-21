@@ -1,6 +1,6 @@
 //import React, { useState, useEffect } from 'react';
 import Slider from '../../components/Slider/Slider';
-import Accordeon from '../../components/Accordeon/Accordeon';
+// import Accordeon from '../../components/Accordeon/Accordeon';
 import Accordion from '../../components/AccordeonTest/AccordeonTest';
 import Rating from '../../components/Rating/Rating'
 //import DataDescription from '../../data.json';
@@ -20,13 +20,13 @@ const Single = ({ data }) => {
         title,
         location,
         description,
-        equipments,
+        // equipments,
         host,
         rating,
         tags,
     } = dataID;
 
-    console.log("holà", dataID.equipments)
+    console.log("holà", dataID)
 
     // const Logement = () => {
     //     const { logementId } = useParams()
@@ -37,16 +37,16 @@ const Single = ({ data }) => {
     //         }
     //     }
 
-    const contentText = [
-        {
-            title: 'Description',
-            desc: description,
-        },
-        {
-            title: 'Equipements',
-            desc: equipments,
-        },
-    ];
+    // const contentText = [
+    //     {
+    //         title: 'Description',
+    //         desc: description,
+    //     },
+    //     {
+    //         title: 'Equipements',
+    //         equipments: equipments,
+    //     },
+    // ];
 
     //const Rating  = data;
 
@@ -102,17 +102,27 @@ const Single = ({ data }) => {
                     {/* ACCORDEON */}
 
                     <div className='content'>
-                        <div className='accordions'>
-                        <Accordion title="Description" content={description} />
-                        <Accordion title="Equipements" content="{equipements}" />
+                        <div className='accordions radius'>
+                            <div className='accordions_description width' >
+                                <Accordion title="Description" content={description} />
+                            </div>
+                            <div className='accordions_equipements width'>
+                                <Accordion title="Equipements" content={dataID.equipments} />
+                            </div>
                         </div>
                     </div>
 
                     {/* <div className="content"> */}
                     <div>
-                        {contentText.map((content, index) => {
+
+                        {/* {contentText.map((content, index) => {
                             return <Accordeon key={index} content={content} />
-                        })}
+                        })} */}
+
+
+                        {/* <Accordeon dataID={dataID} /> */}
+
+
 
                         {/* <div className="content">
                             <Accordeon title="description" content={host.description}/>
@@ -128,11 +138,11 @@ const Single = ({ data }) => {
                                 return <li key={index}>{item}</li>;
                             })}
                         </ul> */}
-                        
-                    </div>
-                    
 
-                   
+                    </div>
+
+
+
 
 
                 </section>

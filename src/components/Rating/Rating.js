@@ -1,7 +1,7 @@
 import React from 'react';
 import '../Rating/Rating.css';
 
-import { FaStar, FaRegStar } from 'react-icons/fa';
+// import { FaStar, FaRegStar } from 'react-icons/fa';
 
 const Rating = ({rate}) => {
 
@@ -13,6 +13,7 @@ const Rating = ({rate}) => {
             note.push(<div key={i} className="active">
                 {/* <FaStar className="icon-reviews" /> */}
                 <i className="fas fa-star icon"></i>
+                {/* <i class="fas fa-star"></i> */}
                 </div>)
         } else {
             note.push(<div key={i} className="negative">

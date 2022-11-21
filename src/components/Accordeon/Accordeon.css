@@ -2,6 +2,14 @@
     width: 48%;
 }
 
+.wrappe_contain {
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+   margin: 0;
+   align-content: center;
+}
+
 .wrappe {
     height: 50px;
     min-width: 80%;
@@ -62,13 +70,6 @@
 }
 
 
- .wrappe_contain {
-    display: flex;
-    flex-direction: column;
-    width: 48%;
-    margin: 0;
-    align-content: center;
- }
 
  .btn-toggle {
     background: transparent;

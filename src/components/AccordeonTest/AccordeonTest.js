@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
-import { FaRegFileCode } from 'react-icons/fa';
-import '../Accordeon/Accordeon.css'
+// import { FaRegFileCode } from 'react-icons/fa';
+import '../AccordeonTest/AccordeonTest.css'
 import {useLocation} from "react-router-dom";
 
 function Accordion({ title, content}) {
@@ -39,12 +39,12 @@ function Accordion({ title, content}) {
                     onClick={() => setIsActive(!isActive)}
                     >
                         <div className="accordion-title">{title}</div>
-                        <div className="accordion-icon">{isActive ? <i className="fa-solid fa-chevron-down" style={{ transform: 'rotate(180deg)' }}></i> : <i className="fa-solid fa-chevron-down"></i> }</div>
+                        <div className="accordion-icon">{isActive ? <i className="fas fa-chevron-down" style={{ transform: 'rotate(180deg)' }}></i> : <i className="fas fa-chevron-down"></i> }</div>
                     </div>
                     {isActive && <div className="accordion-content">
                         {typeof content === 'string' ?
                             isAbout === true ?
-                                    <span className="accordion-content-full" style={{ fontSize: '24px', minHeight: '20px'}}>{content}</span>
+                                    <span className="accordion-content-full" style={{ fontSize: '18px', minHeight: '20px'}}>{content}</span>
                                     : <span className="accordion-content-full" style={{ fontSize: '18px', minHeight: '190px'}}>{content}</span>
 
                             :

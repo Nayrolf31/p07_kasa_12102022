@@ -6,20 +6,22 @@ import background from '../../assets/Background.png';
 import DataLocation from '../../data.json';
 
 
-  const Home = () => {
-    const [headerTitle] = useState(
-        'Chez vous, partout et ailleurs'
-    );
-    const [data] = useState(DataLocation);
+const Home = () => {
+  const [headerTitle] = useState(
+    'Chez vous, partout et ailleurs'
+  );
+  const [data] = useState(DataLocation);
 
 
   return (
     <main className="Home">
-            <div className="Home-wrappe">
-                <Header text={headerTitle} background={background} />
-                <LocationList data={data} />
-            </div>
-        </main>
+      <div className="Home-wrappe">
+        <div className='home_header'>
+          <Header text={headerTitle} background={background} />
+        </div>
+        <LocationList data={data} />
+      </div>
+    </main>
   );
 };
 
