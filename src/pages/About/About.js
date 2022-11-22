@@ -2,7 +2,7 @@ import React from 'react';
 import Headerabout from '../../components/Header_about/Header_about';
 // import Header from '../../components/Header/Header';
 import background from '../../assets/background2.png';
-import Accordion from '../../components/AccordeonTest/AccordeonTest';
+import Accordion from '../../components/Accordeon/Accordeon';
 import '../../styles/index.css';
 import '../../styles/About.css';
 

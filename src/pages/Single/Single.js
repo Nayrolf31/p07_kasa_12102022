@@ -1,6 +1,6 @@
 //import React, { useState, useEffect } from 'react';
 import Slider from '../../components/Slider/Slider';
-import Accordion from '../../components/AccordeonTest/AccordeonTest';
+import Accordion from '../../components/Accordeon/Accordeon';
 import Rating from '../../components/Rating/Rating';
 import { useParams } from 'react-router-dom';
 

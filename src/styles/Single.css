@@ -1,7 +1,4 @@
 .container__single {
-    /* display: flex;
-    justify-content: center;
-    align-items: flex-start; */
     margin: auto;
     width: 90%;
 }
@@ -12,9 +9,8 @@
 
 
 .single__content {
-    /* margin: 30px 15px; */
     margin: auto;
-    width: 90%;
+    width: 95%;
     min-height: 700px;
 }
 
@@ -110,11 +106,8 @@
 }
 
 .content {
-    /* display: flex;
-    justify-content: space-between; */
     display: flex;
     justify-content: space-between;
-    /* width: 45%; */
     width: 100%;
     align-items: flex-start;
     flex-wrap: wrap;
