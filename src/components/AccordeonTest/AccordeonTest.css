@@ -90,7 +90,7 @@
     }
 
     .accordion-item{
-        width: 95%;
+        width: 100%;
     }
     .accordion {
         display: flex;

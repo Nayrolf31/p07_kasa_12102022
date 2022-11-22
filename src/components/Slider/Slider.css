@@ -1,7 +1,7 @@
 header {
     background: rgb(214, 214, 214);
     height: 400px;
-    width: 90%;
+    width: 94%;
     border-radius: 25px;
     display: flex;
     justify-content: space-between;
@@ -26,6 +26,7 @@ header {
 
 @media screen and (max-width:390px) {
     header{
+        width: 90%;
         height: 200px;
     }
 }
