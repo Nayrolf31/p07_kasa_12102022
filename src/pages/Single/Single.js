@@ -1,13 +1,10 @@
 //import React, { useState, useEffect } from 'react';
 import Slider from '../../components/Slider/Slider';
 import Accordion from '../../components/AccordeonTest/AccordeonTest';
-import Rating from '../../components/Rating/Rating'
-//import DataDescription from '../../data.json';
-//import DataEquipements from '../../data.json';
-//import { FaStar, FaRegStar } from 'react-icons/fa';
+import Rating from '../../components/Rating/Rating';
 import { useParams } from 'react-router-dom';
 
-import './Single.css';
+import '../../styles/Single.css';
 
 const Single = ({ data }) => {
     const params = useParams();

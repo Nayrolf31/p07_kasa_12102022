@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
-
 import data from './data.json';
+
+import './styles/index.css';
 
 import Home from './pages/Home/Home.js';
 import Nav from './components/Navigation/Nav';

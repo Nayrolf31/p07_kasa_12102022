@@ -1,5 +1,5 @@
 import React from 'react';
-import '../Rating/Rating.css';
+import '../../styles/Rating.css';
 
 // import { FaStar, FaRegStar } from 'react-icons/fa';
 

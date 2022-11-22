@@ -3,8 +3,8 @@ import Headerabout from '../../components/Header_about/Header_about';
 // import Header from '../../components/Header/Header';
 import background from '../../assets/background2.png';
 import Accordion from '../../components/AccordeonTest/AccordeonTest';
-import '../../index.css';
-import './About.css';
+import '../../styles/index.css';
+import '../../styles/About.css';
 
 const About = () => {
     const fiable = 'Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements , et toutes les informations sont régulièrement vérifiées par nos équipes.'

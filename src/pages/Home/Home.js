@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
-import './Home.css';
+
 import Header from '../../components/Header/Header';
 import LocationList from '../../components/LocationList/LocationList';
 import background from '../../assets/Background.png';
 import DataLocation from '../../data.json';
 
+import '../../styles/Home.css';
 
 const Home = () => {
   const [headerTitle] = useState(

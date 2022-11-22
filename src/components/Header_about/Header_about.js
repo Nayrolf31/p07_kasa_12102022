@@ -1,5 +1,5 @@
 import React from 'react';
-import './Header_about.css';
+import '../../styles/Header_about.css';
 
 const Headerabout = ({ background, text }) => {
     return (

@@ -1,5 +1,5 @@
 import logo from '../../assets/logo-blanc.png';
-import './Footer.css';
+import '../../styles/Footer.css';
 
 const Footer = () => {
     return (
