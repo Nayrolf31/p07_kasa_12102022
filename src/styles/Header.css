@@ -42,6 +42,10 @@
         height: 220px;
     }
 
+    .header_about_bg {
+        height: inherit;
+    }
+
     h1 {
         width: 61%;
         font-size: 24px;
@@ -63,5 +67,16 @@
     .header__wrappe_about{
         background-image: url("../assets/background_about_respon.png")!important;
     }
+
+    /* .header_about {
+        opacity: 0;
+    }
+
+    .header_about_bg {
+        background-image: url("../assets/background_about_respon.png")!important;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 15px;
+    } */
 }
 

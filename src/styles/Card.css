@@ -1,6 +1,10 @@
 .card {
     list-style: none;
-    border-collapse: hidden;
+}
+
+.card:hover {
+    scale: 1.01;
+    transition: 1s;
 }
 
 .card-title {

@@ -9,6 +9,10 @@
     margin-bottom: 40px;
 }
 
+.container__accordeon span {
+    font-size: 24px!important;
+}
+
 .container__about {
     height: auto;
     min-height: 600px;

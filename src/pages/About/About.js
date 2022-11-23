@@ -1,6 +1,5 @@
 import React from 'react';
 import Headerabout from '../../components/Header_about/Header_about';
-// import Header from '../../components/Header/Header';
 import background from '../../assets/background2.png';
 import Accordion from '../../components/Accordeon/Accordeon';
 import '../../styles/index.css';
@@ -17,15 +16,14 @@ const About = () => {
         <main className="container__about">
             <div className="about__wrappe">
                 <div className='header_about'>
-                <Headerabout background={background} />
-                {/* <Header background={background} /> */}
+                    <Headerabout background={background} />
                 </div>
                 <section className="container__accordeon">
                     <div className='about_contain width_about'>
-                    <Accordion title="Fiabilité" content={fiable} />
-                    <Accordion title="Respect" content= {respect} />
-                    <Accordion title="Service" content= {service} />
-                    <Accordion title="Responsabilité" content= {Responsabilite} />
+                        <Accordion title="Fiabilité" content={fiable} />
+                        <Accordion title="Respect" content={respect} />
+                        <Accordion title="Service" content={service} />
+                        <Accordion title="Responsabilité" content={Responsabilite} />
                     </div>
                 </section>
             </div>
