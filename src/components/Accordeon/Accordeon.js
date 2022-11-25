@@ -17,7 +17,6 @@ function Accordion({ title, content}) {
     }, [location])
 
     return (
-        <>
             <div className="accordion">
                 <div className="accordion-item">
                     <div className="accordion-title-wrapper"
@@ -41,7 +40,6 @@ function Accordion({ title, content}) {
                     </div>}
                 </div>
             </div>
-        </>
     );
 };
 

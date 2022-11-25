@@ -16,6 +16,7 @@ const Single = ({ data }) => {
         title,
         location,
         description,
+        equipments,
         host,
         rating,
         tags,
@@ -61,7 +62,7 @@ const Single = ({ data }) => {
                                 <Accordion title="Description" content={description} />
                             </div>
                             <div className='accordions_equipements width'>
-                                <Accordion title="Equipements" content={dataID.equipments} />
+                                <Accordion title="Equipements" content={equipments} />
                             </div>
                         </div>
                     </div>
