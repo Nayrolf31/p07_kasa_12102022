@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+// import { createRoot } from "react-dom/client";
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import data from './data.json';
@@ -14,7 +15,8 @@ import Error from './pages/404/404';
 import Footer from './components/Footer/Footer';
 
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
+
 root.render(
   <React.StrictMode>
         <Router>
@@ -28,7 +30,6 @@ root.render(
             <Footer />
         </Router>
     </React.StrictMode>,
-    document.title = "Kasa"
 );
               
 reportWebVitals();
