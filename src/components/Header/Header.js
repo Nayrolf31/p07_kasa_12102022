@@ -10,7 +10,7 @@ const Header = ({ background, text }) => {
                     backgroundImage: `url(${background})`,
                 }}
             >
-                    <h1> {text} </h1>
+                    <h1 id='header__title'> {text} </h1>
             </div>
         </div>
     );

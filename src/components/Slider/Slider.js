@@ -5,6 +5,7 @@ import prevImage from '../../assets/left.png';
 
 const Slider = ({ pictures }) => {
     const [index, setIndex] = useState(0);
+    const multiplePictures = pictures.length > 1;
 
     const next = () => {
         if (index >= pictures.length - 1) {
@@ -12,8 +13,8 @@ const Slider = ({ pictures }) => {
         } else {
             setIndex(() => index + 1);
         }
-        console.log(index);
     };
+    console.log("COUCOU", index);
 
     const prev = () => {
         console.log('Prev');
@@ -31,18 +32,26 @@ const Slider = ({ pictures }) => {
                 backgroundImage: `url(${pictures[index]})`,
             }}
         >
-            <img
-                className="image-slider"
-                src={prevImage}
-                alt="prev"
-                onClick={prev}
-            />
-            <img
-                className="image-slider"
-                src={nextImage}
-                alt="next"
-                onClick={next}
-            />
+            {
+                multiplePictures && (
+                    <img
+                        className="image-slider"
+                        src={prevImage}
+                        alt="prev"
+                        onClick={prev}
+                    />
+                )
+            }
+            {
+                multiplePictures && (
+                    <img
+                        className="image-slider"
+                        src={nextImage}
+                        alt="next"
+                        onClick={next}
+                    />
+                )
+            }
         </header>
     );
 };

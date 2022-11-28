@@ -27,6 +27,7 @@ const Single = ({ data }) => {
     return (
         <div className="container__single">
             <div className="single__wrappe">
+
                 <Slider pictures={pictures} />
                 <section className="single__content">
                     <div className="single__content--header">
