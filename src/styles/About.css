@@ -10,7 +10,7 @@
 }
 
 .container__accordeon span {
-    font-size: 24px!important;
+    font-size: 24px !important;
 }
 
 .container__about {
@@ -30,16 +30,16 @@
         margin: auto;
     }
 
-    .about__wrappe{
+    .about__wrappe {
         width: 100%;
     }
 
     .container__accordeon {
-        width: 100%; 
+        width: 100%;
     }
 
     .container__accordeon span {
-        font-size: 12px!important;
+        font-size: 12px !important;
     }
 
     .width_about {
@@ -50,4 +50,10 @@
         justify-content: center;
     }
 
+}
+
+@media screen and (max-width:1240px) {
+    .container__accordeon span {
+        font-size: 18px !important;
+    }
 }
