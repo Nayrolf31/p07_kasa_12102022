@@ -38,6 +38,10 @@
         width: 100%; 
     }
 
+    .container__accordeon span {
+        font-size: 12px!important;
+    }
+
     .width_about {
         margin-top: 20px;
         width: 100%;

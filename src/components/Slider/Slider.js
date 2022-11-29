@@ -14,7 +14,6 @@ const Slider = ({ pictures }) => {
             setIndex(() => index + 1);
         }
     };
-    console.log("COUCOU", index);
 
     const prev = () => {
         console.log('Prev');
