@@ -38,7 +38,7 @@
         width: 100%;
     }
 
-    .container__accordeon span {
+    .about_contain span {
         font-size: 12px !important;
     }
 
@@ -52,7 +52,7 @@
 
 }
 
-@media screen and (max-width:1240px) {
+@media only screen and (max-width: 1240px) and (min-width: 701px)  {
     .container__accordeon span {
         font-size: 18px !important;
     }
